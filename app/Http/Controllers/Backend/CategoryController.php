@@ -46,6 +46,7 @@ class CategoryController extends Controller
      */
     public function store(StoreCategoryRequest $request)
     {
+        //kjhgfds
         try {
             DB::beginTransaction();
             $data = collect($request->all())->except('_token');
